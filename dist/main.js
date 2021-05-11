@@ -422,11 +422,13 @@ const listner = event => {
         if (element.country === country.textContent) {
           renderDropdownSelectCol(element, country.textContent);
           dropdownSelect.style.display = 'block';
+          dropdownDefault.style.display = 'none';
         }
       });
     }
     if (target.closest('.dropdown-lists__list--select')) {
       dropdownSelect.style.display = 'none';
+      dropdownDefault.style.display = 'block';
     }
   }
 
